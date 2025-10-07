@@ -85,3 +85,12 @@ div.cname{
     letter-spacing: .4vh;
     color: rgb(240, 12, 61);
 }
+
+.heading{
+    font-family: "Tilt Warp", sans-serif;
+    color: rgb(240, 4, 94);
+    text-align: center;
+    margin-top: 4vb;
+    font-size: 10vb;
+    text-shadow: 3px 2px 9px rgb(87, 87, 87);
+}
