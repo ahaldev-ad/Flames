@@ -6,13 +6,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="flames.css">
+    <link rel="script" href="script.js">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
     <div class="main">
         <form id="nform">
             <div class="yname">
                 
-                <input type="text" id="name1" name="name2" required>
+                <input type="text" id="name1" name="name1" placeholder="Your Name" required>
             </div>
 
             <div class="cname">
@@ -20,7 +28,16 @@
                 <input type="text" id="name2" name="name2" placeholder="Your Crush Name 🫣💕" required>
             </div>
 
+            <input type="submit" id="submit" value="Find your FLAMES">
+
         </form>
+
+
+        <div id="result">
+            <!-- JS controled div -->
+        </div>
+
+
     </div>
 </body>
 </html>

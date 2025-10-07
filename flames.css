@@ -10,7 +10,7 @@ body{
 
 div.main{
     background-color: rgb(255, 255, 255);
-    height: 700px;
+    height: auto;
     width: 500px;
     border-radius: 25px;
     position: absolute;
@@ -18,18 +18,48 @@ div.main{
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 0px 0px 50px rgb(255, 107, 107);
+    padding-top: 6vh;
+    padding-bottom: 5vh;
     
 }
 
-div.yname{
-    margin-top: 20px;
-}
 
 div.cname{
     margin-top: 20px;
 }
 
+#name1{
+    padding-left: 2vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    margin-left: 50%;
+    translate: -50%;
+    height: 3vh;
+    width: 35vh;
+}
+
 #name2{
-    height: 25px;
-    width: 300px;
+    padding-left: 2vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    margin-left: 50%;
+    translate: -50%;
+    height: 3vh;
+    width: 35vh;
+}
+
+#submit{
+    margin-left: 50%;
+    translate: -50%;
+    margin-top: 3vh;
+    height: 5vh;
+    width: 20vh;
+    background: linear-gradient(90deg,rgb(255, 0, 34),rgb(255, 0, 76));
+    border-radius: 1vh;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-family: "DynaPuff", system-ui;
+    font-style: normal;
+    font-size: medium;
+
 }
