@@ -63,3 +63,12 @@ div.cname{
     font-size: medium;
 
 }
+
+#result{
+    margin-left: 50%;
+    translate: -50%;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    align-items: center;
+
+}

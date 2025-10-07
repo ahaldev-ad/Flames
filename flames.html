@@ -6,7 +6,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="flames.css">
-    <link rel="script" href="script.js">
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,27 +16,33 @@
 </head>
 <body>
     <div class="main">
-        <form id="nform">
-            <div class="yname">
-                
-                <input type="text" id="name1" name="name1" placeholder="Your Name" required>
-            </div>
+        <div id="formdiv">
 
-            <div class="cname">
-                
-                <input type="text" id="name2" name="name2" placeholder="Your Crush Name 🫣💕" required>
-            </div>
+            <form id="nform">
+                <div class="yname">
+                    
+                    <input type="text" id="name1" name="name1" placeholder="Your Name" required>
+                </div>
 
-            <input type="submit" id="submit" value="Find your FLAMES">
+                <div class="cname">
+                    
+                    <input type="text" id="name2" name="name2" placeholder="Your Crush Name 🫣💕" required>
+                </div>
 
-        </form>
+                <input type="submit" id="submit" value="Find your FLAMES">
+
+            </form>
+        </div>
 
 
-        <div id="result">
+        <div id="result" style="display: none;">
             <!-- JS controled div -->
         </div>
 
 
     </div>
+
+
+    <script src="script.js"></script>
 </body>
 </html>
