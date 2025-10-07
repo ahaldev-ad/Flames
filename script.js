@@ -48,9 +48,34 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Show result
     //resultDiv.textContent = `The relation between you and your crush is: ${relation[flames[0]]}`;
-    resultDiv.innerHTML = `<h2>${relation[flames[0]]}</h2>`;
+    resultDiv.innerHTML = `<h2 id ="result_css">${relation[flames[0]]}</h2>`;
     resultDiv.classList.add("show-result"); // optional CSS animation hook
     document.getElementById("formdiv").style.display = "none";
     document.getElementById("result").style.display = "block";
+    
+    if (relation[flames[0]] == "Friendship 💫") {
+        document.getElementById("maindiv").style.boxShadow = "0px 0px 50px rgb(255, 255, 0)" ;
+    }
+
+    else if (relation[flames[0]] == "Love ❤️") {
+        document.getElementById("maindiv").style.boxShadow = "0px 0px 50px rgb(255, 0, 0)" ;
+    }
+
+    else if (relation[flames[0]] == "Affection 💕") {
+        document.getElementById("maindiv").style.boxShadow = "0px 0px 50px rgb(255, 192, 203)" ;
+    }
+
+    else if (relation[flames[0]] == "Marriage 💍") {
+        document.getElementById("maindiv").style.boxShadow = "0px 0px 50px rgb(255, 215, 0)" ;
+    }
+
+    else if (relation[flames[0]] == "Enemy 😈") {
+        document.getElementById("maindiv").style.boxShadow = "0px 0px 50px rgb(64, 64, 64)" ;
+    }
+
+    else if (relation[flames[0]] == "Siblings 🤗") {
+        document.getElementById("maindiv").style.boxShadow = "0px 0px 50px rgb(0, 128, 0)" ;
+    }
+
   });
 });
