@@ -3,17 +3,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const resultDiv = document.getElementById("result");  // output div id
 
   form.addEventListener("submit", (e) => {
-    e.preventDefault(); // prevent page reload
+    e.preventDefault(); 
 
-    // Get values from input boxes
+    
     let name1 = document.getElementById("name1").value.toLowerCase().replace(/\s+/g, "");
     let name2 = document.getElementById("name2").value.toLowerCase().replace(/\s+/g, "");
 
-    // Convert names to character arrays
+    
     let L1 = name1.split("");
     let L2 = name2.split("");
 
-    // Remove common characters
+    
     L1.forEach((char) => {
       const index = L2.indexOf(char);
       if (index !== -1) {
@@ -22,10 +22,10 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
-    // Count remaining letters
+    
     const count = L1.length + L2.length;
 
-    // FLAMES logic
+    
     let flames = ["F", "L", "A", "M", "E", "S"];
     while (flames.length > 1) {
       let cut = (count % flames.length) - 1;
@@ -36,7 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
 
-    // Relationship meaning
     const relation = {
       F: "Friendship 💫",
       L: "Love ❤️",
@@ -46,10 +45,10 @@ document.addEventListener("DOMContentLoaded", () => {
       S: "Siblings 🤗"
     };
 
-    // Show result
+    
     //resultDiv.textContent = `The relation between you and your crush is: ${relation[flames[0]]}`;
     resultDiv.innerHTML = `<h2 id ="result_css">${relation[flames[0]]}</h2>`;
-    resultDiv.classList.add("show-result"); // optional CSS animation hook
+    resultDiv.classList.add("show-result"); 
     document.getElementById("formdiv").style.display = "none";
     document.getElementById("result").style.display = "block";
     
