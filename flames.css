@@ -41,6 +41,10 @@ div.cname{
     width: 35vh;
 }
 
+#name1:focus{
+    scale: 101%;
+}
+
 #name2{
     padding-left: 2vh;
     padding-top: 1vh;

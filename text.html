@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FLAMES Input with Particles</title>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@3"></script>
+  <style>
+    body {
+      background: #fff0f5;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    #particles {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+
+    .input-container {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    input[type="text"] {
+      padding: 14px 20px;
+      font-size: 18px;
+      border: 2px solid #ff6b81;
+      border-radius: 12px;
+      outline: none;
+      transition: 0.3s;
+      background: #fff;
+      color: #333;
+      box-shadow: 0 0 10px rgba(255, 107, 129, 0.2);
+    }
+
+    input[type="text"]:focus {
+      border-color: #ff3366;
+      box-shadow: 0 0 20px rgba(255, 51, 102, 0.5);
+      transform: scale(1.02);
+    }
+
+    h2 {
+      color: #ff3366;
+      margin-bottom: 12px;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="particles"></div>
+
+  <div class="input-container">
+    <h2>💖 Enter Your Name 💖</h2>
+    <input type="text" id="loveInput" placeholder="Type here...">
+  </div>
+
+  <script>
+    tsParticles.load("particles", {
+      background: {
+        color: { value: "#fff0f5" }
+      },
+      fpsLimit: 60,
+      particles: {
+        number: { value: 40 },
+        color: { value: ["#ff3366", "#ff6b81", "#ff99aa"] },
+        shape: { type: "heart" },
+        opacity: { value: 100 },
+        size: { value: 6, random: true },
+        move: {
+          enable: true,
+          speed: 2,
+          direction: "none",
+          outModes: "out"
+        }
+      },
+      interactivity: {
+        events: {
+          onHover: { enable: true, mode: "repulse" },
+          resize: true
+        },
+        modes: {
+          repulse: { distance: 1000, duration: 0.4 }
+        }
+      },
+      detectRetina: true
+    });
+  </script>
+
+</body>
+</html>
