@@ -78,3 +78,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   });
 });
+
+const button = document.getElementById("name2");
+
+  button.onclick = function() {
+    document.getElementById("fheart").style.display = "block";
+  };

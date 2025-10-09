@@ -42,6 +42,7 @@ div.cname{
     transition: 0.3s;
     border: 2px solid #ff446c;
     border-radius: 1vh;
+    
 
 }
 
@@ -49,6 +50,7 @@ div.cname{
     transform: scale(1.02);
     box-shadow: 0px 0px 20px  rgb(255, 166, 166);
     outline: 2px #ff3366;
+    
     
 }
 
@@ -63,6 +65,7 @@ div.cname{
     transition: 0.3s;
     border: 2px solid #ff446c;
     border-radius: 1vh;
+    position: relative;
 }
 
 #name2:focus{
@@ -71,6 +74,25 @@ div.cname{
     outline: 2px #ff3366;
     
 }
+
+.heart_float{
+    scale: 120%;
+    rotate: 30deg;
+    position: absolute;
+    top : 12.2vh;
+    left : 44vh;
+    animation:float 5s ease infinite ;
+    display: none;
+    transition: 500ms;
+}
+
+  @keyframes float {
+    0%   { transform: translate(0, 0); }
+    25%  { transform: translate(2px, -2px); }
+    50%  { transform: translate(0, -4px); }
+    75%  { transform: translate(-2px, -2px); }
+    100% { transform: translate(0, 0); }
+  }
 
 #submit{
     margin-left: 50%;
